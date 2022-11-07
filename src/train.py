@@ -1,7 +1,9 @@
 import torch
 from sbi import utils, inference
 from sbi.inference import SNPE, SNLE, SNRE
+from network import SummaryNet
 
+embedding_net = SummaryNet()
 
 prior_low = [1.0, 0.00, 0.00, 19.9, -0.1, -0.1, 1.0, 3, 0.0, 0.0]
 prior_high = [4.0, 0.05, 0.05, 20.1, 0.1, 0.1, 2.0, 5, 0.05, 0.05]

@@ -20,6 +20,6 @@ class SummaryNet(nn.Module):
         x = F.relu(self.fc(x))
         return x
 
-embedding_net = SummaryNet()
+# embedding_net = SummaryNet()
 
-summary(embedding_net, (1, 32, 32))
+# summary(embedding_net, (1, 32, 32))
