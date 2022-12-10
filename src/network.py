@@ -47,6 +47,3 @@ class SummaryNet(nn.Module):
         x = x.view(-1, 128 * 4 * 4)
         x = F.relu(self.fc(x))
         return x
-
-
-embedding_net = SummaryNet()
