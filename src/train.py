@@ -5,8 +5,8 @@ from network import SummaryNet
 
 embedding_net = SummaryNet()
 
-prior_low = [1.0, 0.00, 0.00, 19.9, -0.1, -0.1, 1.0, 3, 0.0, 0.0]
-prior_high = [4.0, 0.05, 0.05, 20.1, 0.1, 0.1, 2.0, 5, 0.05, 0.05]
+prior_low = [0.3, -0.8, -0.8, -2, -2, -0.8, -0.8, 18, 0.1, 0.5, -0.8, -0.8]
+prior_high = [4.0, 0.8, 0.8, 2, 2, 0.8, 0.8, 25, 3, 8, 0.8, 0.8]
 
 prior = utils.BoxUniform(low=torch.tensor(prior_low), 
                              high=torch.tensor(prior_high))                           
