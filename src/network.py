@@ -1,10 +1,11 @@
 import torch
 import torch.nn as nn
-from torchsummary import summary
 
 
-# Summary Network module - with summary
 class SummaryNet(nn.Module):
+    """
+    Summary Network module
+    """
 
     def __init__(self):
         super().__init__()
@@ -26,8 +27,6 @@ class SummaryNet(nn.Module):
 
         # Maxpool layer that reduces 32x32 image to 4x4
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
-        # Fully connected layer taking as input the 6 flattened output arrays from the maxpooling layer
-        # self.fc = nn.Linear(in_features=128*4*4, out_features=24)
 
         # out_features correspond to 4*(Number of summary parameters)
         self.fc = nn.Linear(in_features=128 * 4 * 4, out_features=48)
