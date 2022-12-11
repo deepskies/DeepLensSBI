@@ -20,9 +20,8 @@ posterior = train(prior, train_data, embedding_net, model='maf', hidden_features
 
 def save_posterior(posterior):
     file_name = 'exp1_posterior.pkl'
-    open_file = open(file_name)
-    pickle.dump(posterior, open_file)
-    open_file.close()
+    with open(file_name) as open_file:
+        pickle.dump(posterior, open_file)
     
 
 def load_posterior(posterior_file):

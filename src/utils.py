@@ -9,8 +9,6 @@ def get_dataset(data_file_path, train=True):
     :return: specified dataset (train/ test)
     """
 
-    data_file = open(data_file_path, 'rb')
-    dataset = pickle.load(data_file)
-    data_file.close()
-
+    with open(data_file_path, 'rb') as data_file:
+        dataset = pickle.load(data_file)
     return dataset

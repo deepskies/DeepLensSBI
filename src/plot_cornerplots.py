@@ -45,9 +45,7 @@ def get_cornerplot(posterior, sample_num=10):
 
 
     # Now let's make a vector of the median (one definition of "best-fit") values of the posterior for each parameter
-    best_fit = []
-    for i in range(12):
-        best_fit.append(np.median(samples[:,i].cpu()))
+    best_fit = [np.median(samples[:,param].cpu()) for param in range(12)]
     best_fit_t = torch.tensor(best_fit)
 
     # Let's plot a corner plot.

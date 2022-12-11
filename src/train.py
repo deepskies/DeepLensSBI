@@ -50,5 +50,4 @@ def train(prior, train_data, embedding_net, model='maf', hidden_features=10, num
 
     # Now that we have both the simulated images and parameters defined properly, we can train the SBI.
     density_estimator = inference.append_simulations(theta,train_images).train()
-    posterior = inference.build_posterior(density_estimator)
-    return posterior
+    return inference.build_posterior(density_estimator)
