@@ -7,11 +7,5 @@ posterior_inference.py: save and load posterior from a pickle file
 
 train.py: SNPE training routine
 
-## Need refactor
-plot_residuals.py
-
-residual_plotter.py
-
-sampling.py
-
-set_param_residuals.py
+## TODO
+add a runner script
