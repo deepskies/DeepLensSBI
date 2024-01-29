@@ -7,5 +7,4 @@ posterior_inference.py: save and load posterior from a pickle file
 
 train.py: SNPE training routine
 
-## TODO
-Add BNN networks and runner script
+12_param_BNN.py: BNN runner script
