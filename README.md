@@ -6,7 +6,7 @@ To leverage the increased statistical power of the lenses that will be discovere
 
 Here we provide implementation for both NPE and BNN approaches presented in our paper.
 
-The dependencies needed for training the model are provided in requirements.txt. 
+The dependencies needed for training the model are provided in     requirements.txt
 
 To train a model, run
 
@@ -24,4 +24,4 @@ The arguments of the model are:
 
 --- 
 
-Analysis notebooks are found in the Analysis folder. These notebookx document how to produce the plots that are published in the paper. 
+Analysis notebooks are found in the "Analysis" folder. These notebooks document how to produce the plots that are published in the paper. 
