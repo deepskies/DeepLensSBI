@@ -24,4 +24,4 @@ The arguments of the model are:
 
 --- 
 
-Analysis notebooks are found in the "Analysis" folder. These notebooks document how to produce the plots that are published in the paper. 
+Analysis notebooks are found in the "Analysis" folder. These notebooks document how to produce the plots that are published in the paper. The files required to run the notebooks can be found in the Zenodo repository for this project. 
