@@ -11,7 +11,7 @@ from sbi.inference import SNPE
 import numpy as np
 import pickle
 
-from .network import SummaryNet
+from network import SummaryNet
 
 # set seed for numpy and torch
 
@@ -59,8 +59,8 @@ def get_data(num_params):
         If the training or test data is not found
     """
     if num_params == 1:
-        train_data_path = "1param_200k_train.pkl"
-        test_data_path = "1param_200k_train.pkl"
+        train_data_path = "SBI_dataset/1param_200k_train.pkl"
+        test_data_path = "SBI_dataset/1param_200k_test_set.pkl"
     elif num_params == 5:
         train_data_path = 'SBI_dataset/5param_model_training_500k_Aug29.pkl'
         test_data_path = 'SBI_dataset/5param_model_test_Aug29.pkl'
