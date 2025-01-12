@@ -49,8 +49,6 @@ def get_data(num_params):
     -------
     dataset_train : torch.Tensor
         Training data
-    dataset_test : torch.Tensor
-        Test data
     Raises
     ------
     ValueError
@@ -60,27 +58,20 @@ def get_data(num_params):
     """
     if num_params == 1:
         train_data_path = "SBI_dataset/1param_200k_train.pkl"
-        test_data_path = "SBI_dataset/1param_200k_test_set.pkl"
     elif num_params == 5:
         train_data_path = 'SBI_dataset/5param_model_training_500k_Aug29.pkl'
-        test_data_path = 'SBI_dataset/5param_model_test_Aug29.pkl'
     elif num_params == 12:
         train_data_path = 'SBI_dataset/12_model_training_des_1M.pkl'
-        test_data_path = 'SBI_dataset/12_model_test_des_real.pkl'
     else:
         raise ValueError("Invalid number of parameters")
 
     if not os.path.exists(train_data_path):
         raise FileNotFoundError(f"Training data not found at {train_data_path}")
-    if not os.path.exists(test_data_path):
-        raise FileNotFoundError(f"Test data not found at {test_data_path}")    
     
     with open(train_data_path, "rb") as train_data_file:
         dataset_train = pickle.load(train_data_file)
-    with open(test_data_path, "rb") as test_data_file:
-        dataset_test = pickle.load(test_data_file)
     
-    return dataset_train, dataset_test
+    return dataset_train
 
 
 def get_model(out_features):
@@ -217,7 +208,7 @@ if __name__ == "__main__":
     seed = args.seed
 
     set_seed(seed)
-    dataset_train, dataset_test = get_data(num_params)
+    dataset_train = get_data(num_params)
 
     # out_features = num_params * 4
     embedding_net = get_model(out_features)
