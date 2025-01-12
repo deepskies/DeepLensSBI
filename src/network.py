@@ -8,7 +8,7 @@ class SummaryNet(nn.Module):
     Summary Network module
     """
 
-    def __init__(self):
+    def __init__(self, out_features):
         super().__init__()
         # 2D convolutional layer
         self.conv1 = nn.Conv2d(in_channels=1, out_channels=8, kernel_size=3, padding='same')
@@ -30,7 +30,7 @@ class SummaryNet(nn.Module):
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
 
         # out_features correspond to 4*(Number of summary parameters)
-        self.fc = nn.Linear(in_features=128 * 4 * 4, out_features=48)
+        self.fc = nn.Linear(in_features=128 * 4 * 4, out_features=out_features)
 
     def forward(self, x):
         x = x.view(-1, 1, 32, 32)
