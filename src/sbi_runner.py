@@ -76,7 +76,7 @@ def get_data(num_params):
 
 def get_model(out_features):
     """
-    Get the model for the given number of parameters
+    Get the embedding network model for a given number of output features.
     Parameters
     ----------
     out_features : int
