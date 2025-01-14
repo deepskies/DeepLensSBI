@@ -8,7 +8,7 @@ Here we provide implementation for both NPE and BNN approaches presented in our 
 
 The dependencies needed for training the model are provided in requirements.txt
 
-To train a BNN model, see the script in src/12_param_BNN.py as an example of how to train a 12-parameter BNN. 
+To train a BNN model, see the script in src/12_param_BNN.py as an example of how to train a 12-parameter BNN. This script can be adapted for training a 1- or 5-parameter model. 
 
 To train a NPE model, run
 
