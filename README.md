@@ -21,7 +21,4 @@ The arguments of the model are:
 | num_transforms      | Sets the number of flow transformations used in the MAF model  |
 | out_features   | Sets the number of output features the embedding network outputs |
 
-
---- 
-
-Analysis notebooks are found in the "Analysis" folder. These notebooks document how to produce the plots that are published in the paper. The files required to run the notebooks can be found in the Zenodo repository for this project: https://zenodo.org/records/13961234  
+The script will output a pickle file that contains the trained neural posterior estimator. Examples of how to use the trained neural posterior estimator can be found in the analysis notebooks in the "Analysis" folder. These notebooks document how to produce the plots that are published in the paper. The files required to run the notebooks can be found in the Zenodo repository for this project: https://zenodo.org/records/13961234.
