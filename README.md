@@ -6,7 +6,9 @@ To leverage the increased statistical power of the lenses that will be discovere
 
 Here we provide implementation for both NPE and BNN approaches presented in our paper.
 
-The dependencies needed for training the model are provided in requirements.txt
+The dependencies needed for training the model are provided in requirements.txt. To install it, create a python environment (we recommend python 3.9), then run the following pip command:
+
+    pip install --user -r "requirements.txt"
 
 To train a BNN model, see the script in src/12_param_BNN.py as an example of how to train a 12-parameter BNN. This script can be adapted for training a 1- or 5-parameter model. 
 
