@@ -20,7 +20,7 @@ conda activate deeplensSBI
 pip install --user -r "requirements.txt"
 ```
 
-3. Create the training set data, or download the datasets used in this work from [Zenodo](https://zenodo.org/records/13961234). By default the script will look for those files in the folder "SBI_dataset".
+3. Create the training set data, or download the datasets used in this work from [Zenodo](https://zenodo.org/records/13961234). By default, the script will look for those files in the folder "SBI_dataset".
 
 4. To train a NPE model, run
 ```
