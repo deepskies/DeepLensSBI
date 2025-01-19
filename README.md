@@ -20,12 +20,14 @@ conda activate deeplensSBI
 pip install --user -r "requirements.txt"
 ```
 
-3. Create the training set data using `deeplenstronomy` [(link)](https://github.com/deepskies/deeplenstronomy/), or download the datasets used in this work from [Zenodo](https://zenodo.org/records/13961234). By default, the NPE training script will look for those files in the folder "SBI_dataset".
+3. Create the training set data using `deeplenstronomy` [(link)](https://github.com/deepskies/deeplenstronomy/), or download the datasets used in this work from [Zenodo](https://zenodo.org/records/13961234). 
 
 4. To train a NPE model, run
 ```
 python src/sbi_runner.py --num_params --hidden_features --num_transforms --out_features --seed
 ```
+By default, the script will look for training data in the folder "SBI_dataset". Please modify the file path as necessary. 
+
 The arguments of the model are:
 
 | Argument      | Description |
