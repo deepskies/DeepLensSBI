@@ -7,7 +7,7 @@ To leverage the increased statistical power of the lenses that will be discovere
 Here we provide implementation for both NPE and BNN approaches presented in our paper.
 
 # Installation
-1. Set up an environment. This can be done using
+1. Set up an environment. This can be done using `conda`:
 
 ```
 conda create --name deeplensSBI python=3.9
