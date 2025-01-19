@@ -20,7 +20,9 @@ conda activate deeplensSBI
 pip install --user -r "requirements.txt"
 ```
 
-3. To train a NPE model, run
+3. Create the training set data, or download the datasets used in this work from [Zenodo](https://zenodo.org/records/13961234). By default the script will look for those files in the folder "SBI_dataset".
+
+4. To train a NPE model, run
 ```
 python src/sbi_runner.py --num_params --hidden_features --num_transforms --out_features --seed
 ```
@@ -35,7 +37,7 @@ The arguments of the model are:
 
 The script will output a pickle file that contains the trained neural posterior estimator. 
 
-4. To train a BNN model, see the script in src/12_param_BNN.py as an example of how to train a 12-parameter BNN. This script can be adapted for training a 1- or 5-parameter model.
+5. To train a BNN model, see the script in src/12_param_BNN.py as an example of how to train a 12-parameter BNN. This script can be adapted for training a 1- or 5-parameter model.
 
 # Analysis
 Examples of how to use the trained neural posterior estimator can be found in the analysis notebooks in the "Analysis" folder. These notebooks document how to produce the plots that are published in the paper. The files required to run the notebooks can be found in the Zenodo repository for this project: https://zenodo.org/records/13961234.
