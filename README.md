@@ -20,7 +20,7 @@ conda activate deeplensSBI
 pip install --user -r "requirements.txt"
 ```
 
-3. Create the training set data using `deeplenstronomy` [(link)](https://github.com/deepskies/deeplenstronomy/), or download the datasets used in this work from [Zenodo](https://zenodo.org/records/13961234). 
+3. Create the training set data using `deeplenstronomy` [(link)](https://github.com/deepskies/deeplenstronomy/), or download the datasets used in this work from [Zenodo](https://zenodo.org/records/13961234?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjZmNzE5M2UzLTA3MTctNGJjNS1iOTVkLTA0ODEzNzQwZGUzZiIsImRhdGEiOnt9LCJyYW5kb20iOiJkNmRjNmYxNDZhMjZmYWYwYjc5ZjAwMDE3YmRjMWI5OSJ9.zm9UVtbKeTtl3Im8-P0P99lKEpgHLicSYmz8qHbvKGwBAq9ShijdJFcZjDXbkH4iAmZ04i7l1P7901ZaOFi02g). 
 
 4. To train a NPE model, run
 ```
